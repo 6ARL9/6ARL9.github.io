@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Obsidian GSync</title>
+<meta name="description" content="Obsidian GSync sincroniza en ambos sentidos una bóveda personal de Obsidian con una carpeta del propio Google Drive del usuario.">
+<style>
+  :root { color-scheme: light dark; --bg:#fafafa; --fg:#1d1d1f; --muted:#5f5f66; --line:#e3e3e8; --accent:#6d28d9; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#18181b; --fg:#f2f2f4; --muted:#a1a1aa; --line:#2e2e33; --accent:#a78bfa; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; line-height:1.6; }
+  main { max-width: 44rem; margin: 0 auto; padding: 3rem 1.25rem 4rem; }
+  h1 { font-size: 2rem; margin: 0 0 .25rem; letter-spacing: -.01em; }
+  h2 { font-size: 1.15rem; margin: 2.25rem 0 .5rem; }
+  .lead { font-size: 1.1rem; color: var(--muted); margin: 0 0 1.5rem; }
+  ul { padding-left: 1.2rem; }
+  li { margin: .3rem 0; }
+  a { color: var(--accent); }
+  .en { border-top: 1px solid var(--line); margin-top: 2.5rem; padding-top: 1.5rem; }
+  footer { border-top: 1px solid var(--line); margin-top: 2.5rem; padding-top: 1rem; font-size: .9rem; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Obsidian GSync</h1>
+  <p class="lead">Sincronización personal entre mi bóveda de Obsidian y mi propio Google Drive.</p>
+
+  <h2>Qué hace</h2>
+  <p>Obsidian GSync es la configuración personal del complemento de código abierto
+    <a href="https://github.com/dg0988/ObsidianGSync">GSync para Obsidian</a>. Mantiene sincronizada, en ambos sentidos,
+    una bóveda de notas de Obsidian con una carpeta de Google Drive del mismo usuario, para usar las mismas notas en el
+    computador del trabajo, el de la casa y el teléfono.</p>
+  <ul>
+    <li>Sube a Drive las notas nuevas o modificadas en la bóveda y descarga las que cambiaron en Drive.</li>
+    <li>Si una nota cambió en ambos lados, conserva las dos versiones; no sobrescribe nada.</li>
+    <li>Los archivos eliminados van a la papelera de Drive o de Obsidian, nunca se borran definitivamente.</li>
+    <li>Solo trabaja dentro de la carpeta de Drive que se configura en el complemento.</li>
+  </ul>
+
+  <h2>Uso de los datos de Google</h2>
+  <p>La app usa la API de Google Drive solo para listar, descargar, subir y enviar a la papelera los archivos de la carpeta
+    configurada. Los archivos y las credenciales viajan directamente entre el dispositivo y Google; no pasan por ningún
+    servidor intermedio ni se comparten con terceros. Detalles en la
+    <a href="privacy.html">política de privacidad</a>.</p>
+
+  <section class="en" lang="en">
+    <h2>About (English)</h2>
+    <p>Obsidian GSync is a personal setup of the open-source <a href="https://github.com/dg0988/ObsidianGSync">GSync plugin for Obsidian</a>.
+      It provides two-way sync between the owner's Obsidian notes vault and a folder in the owner's own Google Drive, so the same notes
+      are available on all of the owner's devices. It uses the Google Drive API only to list, download, upload and trash files inside
+      the configured folder. Files and tokens go directly between the device and Google; nothing is stored on or shared with any other
+      server or third party. See the <a href="privacy.html">privacy policy</a>.</p>
+  </section>
+
+  <footer>
+    <a href="privacy.html">Política de privacidad / Privacy policy</a>
+  </footer>
+</main>
+</body>
+</html>

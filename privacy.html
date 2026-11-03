@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad · Obsidian GSync</title>
+<style>
+  :root { color-scheme: light dark; --bg:#fafafa; --fg:#1d1d1f; --muted:#5f5f66; --line:#e3e3e8; --accent:#6d28d9; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#18181b; --fg:#f2f2f4; --muted:#a1a1aa; --line:#2e2e33; --accent:#a78bfa; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; line-height:1.6; }
+  main { max-width: 44rem; margin: 0 auto; padding: 3rem 1.25rem 4rem; }
+  h1 { font-size: 1.8rem; margin: 0 0 .25rem; }
+  h2 { font-size: 1.1rem; margin: 2rem 0 .4rem; }
+  .meta { color: var(--muted); margin: 0 0 1.5rem; }
+  ul { padding-left: 1.2rem; }
+  li { margin: .3rem 0; }
+  a { color: var(--accent); }
+  .en { border-top: 1px solid var(--line); margin-top: 2.5rem; padding-top: 1.5rem; }
+  footer { border-top: 1px solid var(--line); margin-top: 2.5rem; padding-top: 1rem; font-size: .9rem; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Política de privacidad de Obsidian GSync</h1>
+  <p class="meta">Última actualización: 2 de noviembre de 2026</p>
+
+  <p>Obsidian GSync es una app de uso personal que sincroniza una bóveda de Obsidian con una carpeta del propio
+    Google Drive del usuario. Esta política explica qué datos de Google usa y cómo.</p>
+
+  <h2>Datos a los que accede</h2>
+  <ul>
+    <li>Los archivos y carpetas que están dentro de la carpeta de Google Drive configurada en el complemento
+      (nombre, contenido, fecha de modificación, tamaño y suma de verificación).</li>
+    <li>Para encontrar esa carpeta y los archivos que ya existían en ella, la app solicita el permiso
+      <code>https://www.googleapis.com/auth/drive</code>, pero solo lee y escribe dentro de la carpeta configurada.</li>
+    <li>No accede a correo, contactos, calendario ni a ningún otro dato de la cuenta de Google.</li>
+  </ul>
+
+  <h2>Cómo usa los datos</h2>
+  <ul>
+    <li>Únicamente para sincronizar: listar, descargar, subir y enviar a la papelera los archivos de esa carpeta.</li>
+    <li>No se usan con fines publicitarios, de análisis ni para entrenar modelos de inteligencia artificial.</li>
+  </ul>
+
+  <h2>Dónde se guardan</h2>
+  <ul>
+    <li>Los archivos quedan solo en la bóveda de Obsidian del dispositivo y en el Google Drive del usuario.</li>
+    <li>Las credenciales de acceso (token de actualización) se guardan solo en cada dispositivo, en la
+      configuración local del complemento.</li>
+    <li>No existe un servidor propio: ningún archivo ni credencial se almacena fuera del dispositivo y de Google.</li>
+  </ul>
+
+  <h2>Con quién se comparten</h2>
+  <p>Con nadie. Los datos no se venden, no se transfieren ni se comparten con terceros. La página de inicio de sesión
+    (<a href="callback.html">callback.html</a>) solo devuelve a Obsidian, en el mismo dispositivo, el código temporal que
+    entrega Google; no guarda ni envía nada.</p>
+
+  <h2>Cómo revocar el acceso</h2>
+  <p>El acceso se puede revocar en cualquier momento desde
+    <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>, o cerrando sesión en
+    los ajustes del complemento.</p>
+
+  <h2>Uso limitado</h2>
+  <p>El uso y la transferencia de la información recibida de las API de Google se ajustan a la
+    <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de datos de usuario de los servicios de API de Google</a>,
+    incluidos los requisitos de uso limitado.</p>
+
+  <section class="en" lang="en">
+    <h2>Privacy policy (English)</h2>
+    <p><strong>Data accessed:</strong> only files and folders inside the Google Drive folder configured in the plugin
+      (name, content, modification time, size and checksum). The app requests the <code>https://www.googleapis.com/auth/drive</code>
+      scope to see files already in that folder, but only reads and writes inside it. No email, contacts, calendar or other account data is accessed.</p>
+    <p><strong>Use:</strong> solely to sync (list, download, upload and trash files in that folder). Not used for advertising,
+      analytics or training AI models.</p>
+    <p><strong>Storage:</strong> files stay only in the device's Obsidian vault and in the user's Google Drive. The refresh token
+      is stored only on each device, in the plugin's local settings. There is no server.</p>
+    <p><strong>Sharing:</strong> none. Data is not sold, transferred or shared with third parties. The sign-in redirect page only
+      hands Google's one-time code back to Obsidian on the same device and stores nothing.</p>
+    <p><strong>Revoking access:</strong> at any time from <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+    <p>The app's use and transfer of information received from Google APIs adheres to the
+      <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+      including the Limited Use requirements.</p>
+  </section>
+
+  <footer><a href="index.html">Obsidian GSync</a></footer>
+</main>
+</body>
+</html>
